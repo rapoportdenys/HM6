@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+function pushArray () {
+        let arrayWords = [];
+        let userInput  = "";
+
+        for ( let i =1; ; i++) {
+            userInput = prompt("Enter your word");
+            if (userInput !== null && userInput !== "") {
+                arrayWords.push(userInput);
+                console.log(arrayWords);
+            }
+            else {
+                arrayWords.pop();
+            }
+        }
+        
+    }
+    pushArray ();
+
+
+// const arrayNum = [];
+
+// for (let i = 0; i<101;i++) {
+//     arrayNum.push (i);
+// }
+
+// let newArrayNum = arrayNum.map (function (Num){
+//     return Num * 3;
+// })
+// console.log (arrayNum)
+// console.log (newArrayNum)
+
+
+
+    </script>
+</body>
+
+</html>
