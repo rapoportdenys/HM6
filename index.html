@@ -31,19 +31,41 @@ function pushArray () {
     pushArray ();
 
 
-// const arrayNum = [];
+function multiplay3 () {
 
-// for (let i = 0; i<101;i++) {
-//     arrayNum.push (i);
-// }
+const arrayNum = [];
 
-// let newArrayNum = arrayNum.map (function (Num){
-//     return Num * 3;
-// })
-// console.log (arrayNum)
-// console.log (newArrayNum)
+for (let i = 0; i<100;i++) {
+    arrayNum.push (i);
+}
+
+let newArrayNum = arrayNum.map (function (Num){
+    return Num * 3;
+})
+console.log (arrayNum);
+console.log (newArrayNum);
+
+};
+
+multiplay3 ();
 
 
+function multiplyRandom3 () {
+
+const arrayNum = [];
+
+for (let i = 0; i<100;i++) {
+    arrayNum.push (Math.round(Math.random() * 100));
+}
+
+let newArrayNum = arrayNum.map (function (Num){
+    return Num * 3;
+})
+console.log (arrayNum);
+console.log (newArrayNum);
+};
+
+multiplyRandom3 (); 
 
     </script>
 </body>
